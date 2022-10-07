@@ -1,0 +1,102 @@
+[
+	{
+		"id": 0,
+		"title": "No Game No Life Vol. 1",
+		"author": 0,
+		"date": "2012",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-38311-0"
+	},
+	{
+		"id": 1,
+		"title": "No Game No Life Vol. 2",
+		"author": 0,
+		"date": "2013",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-38517-6"
+	},
+	{
+		"id": 2,
+		"title": "No Game No Life Vol. 3",
+		"author": 0,
+		"date": "2014",
+		"takenBy": 1,
+		"takenDay": "2022-09-14",
+		"returnDay": "2022-09-20",
+		"isbn": "978-0-316-38519-0"
+	},
+	{
+		"id": 3,
+		"title": "No Game No Life Vol. 4",
+		"author": 0,
+		"date": "2015",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-38521-3"
+	},
+	{
+		"id": 4,
+		"title": "No Game No Life Vol. 5",
+		"author": 0,
+		"date": "2016",
+		"takenBy": null,
+		"takenDay": null,
+		"returnDay": null,
+		"isbn": "978-0-316-38523-7"
+	},
+	{
+		"id": 5,
+		"title": "No Game No Life Vol. 6",
+		"author": 0,
+		"date": "2017",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-38526-8"
+	},
+	{
+		"id": 6,
+		"title": "No Game No Life Vol. 7",
+		"author": 0,
+		"date": "2018",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-31643-9"
+	},
+	{
+		"id": 7,
+		"title": "No Game No Life Vol. 8",
+		"author": 0,
+		"date": "2018",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-50266-5"
+	},
+	{
+		"id": 8,
+		"title": "No Game No Life Vol. 9",
+		"author": 0,
+		"date": "2019",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-0-316-47134-3"
+	},
+	{
+		"id": 9,
+		"title": "No Game No Life Vol. 10",
+		"author": 0,
+		"date": "2021",
+		"takenBy": 0,
+		"takenDay": "2022-09-28",
+		"returnDay": "2022-09-29",
+		"isbn": "978-1-9753-8678-8"
+	}
+]

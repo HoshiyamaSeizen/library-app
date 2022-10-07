@@ -1,0 +1,49 @@
+dialog#info
+    .container
+        img#cover(src="./public/loading.gif", alt="Cover")
+        .image-exclude-container#dialog-hide
+            .info-container
+                h2 Book info
+                form(action="/books/edit", method="POST") 
+                    p Book ID: 
+                        span#book_id
+                    section
+                        label(for='title') Title
+                        input#title(name='title' type='text' required)
+                    section
+                        label(for='author') Author
+                        input#author(name='author' type='text' required)
+                        button.eye#openAuthor(type="button") 
+                            i.fa-solid.fa-eye
+                    section
+                        label(for='date') Year
+                        input#date(name='date' type='text' required)
+                    section
+                        label(for='isbn') isbn
+                        input#isbn(name='isbn' type='text')    
+                    button.text-icon(type='submit') Edit book
+                        i.fa-solid.fa-pen
+                    button#delete-btn.text-icon(type="button") Delete book
+                        i.fa-solid.fa-trash-can
+            .status-container
+                h2 Book status
+                #free
+                    p The book is in stock 
+                    p#date-err 
+                    label(for='order_date') Choose the date of return: 
+                    input#order-date(name='date' type='date')
+                    button#order-btn Take the book
+                #taken
+                    p The book is already taken 
+                    p Taken by: 
+                        span#takenBy
+                        button.eye#openUser 
+                                i.fa-solid.fa-eye
+                    p When: 
+                        span#takenDay 
+                    p Due to: 
+                        span#dueTo
+                    p#outdate
+                    button#return-btn Return the book
+            button.close(type="button", onClick="closeDialog(this)")
+                i.fa-solid.fa-xmark

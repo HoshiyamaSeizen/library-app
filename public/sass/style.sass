@@ -1,0 +1,59 @@
+@import './_vars'
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: $font-family
+
+body
+    background: $color-main-bg
+    overflow: hidden
+
+h1, h2, h3
+    color: $color-main-dark
+    user-select: none
+
+a
+    text-decoration: none
+    color: $color-main
+    transition: 200ms ease
+    &:hover
+        color: $color-main-dark
+
+p, a, input, button, i
+    font-size: 16px
+
+input
+    width: 100%
+    padding: 4px 10px
+    border: 1px solid black
+    border-radius: 4px
+    // &:focus
+    //     outline: none
+
+button
+    text-decoration: none
+    padding: 8px 15px
+    background: $color-main-dark
+    color: white
+    border: none
+    border-radius: 10px
+    transition: 200ms ease-in
+    &:hover
+        background: $color-main
+        scale: 1.05
+    &:active
+        scale: 1
+    &:focus
+        outline: none
+
+img
+    background: $loading-bg
+    border: 1px solid black
+    border-radius: 5px
+
+@import './_dialog'
+@import './_auth'
+@import './_books'
+@import './_modals'

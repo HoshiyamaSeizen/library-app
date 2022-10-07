@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "hoshiyama",
+    "email": "nazarafanasyev@gmail.com",
+    "password": "$2a$12$vjmdyaQQEHQNbqFjy6f2P.iHPWDGHAm6l78rSd9BIn/da5xaGh9mq"
+  },
+  {
+    "id": 1,
+    "name": "hoshiyama",
+    "email": "hoshiyama@gmail.com",
+    "password": "$2a$12$UnPt0xB8LxuOaLWUkTC6XOtNCs4vNwFmFkqoEmxqRgOsHgVAhQmoe"
+  },
+  {
+    "id": 2,
+    "name": "Vanya",
+    "email": "shtarmel@gmail.com",
+    "password": "$2a$12$yZ7fd5X5WoIEnmYzOJUrJOBuJVlGzAPBLiZnPwzY9tQ0VRTfXdLmq"
+  },
+  {
+    "id": 3,
+    "name": "Книгочей",
+    "email": "123@mail.ru",
+    "password": "$2a$12$TJXgABRdXTqHE.lnoNKzlOY11HegFx3jalq15Of0XUkgNIqBS8qcO"
+  }
+]

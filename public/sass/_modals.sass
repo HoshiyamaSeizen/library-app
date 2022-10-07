@@ -1,0 +1,81 @@
+#info .container
+    display: flex
+    flex-direction: row
+    align-items: center
+    overflow-y: auto
+    width: 100%
+    img
+        width: fit-content
+        height: fit-content
+        margin-right: 30px
+
+    section, #taken p:nth-child(2)
+        position: relative
+        .eye
+            padding: 0
+            color: $color-main
+            background: transparent
+            &:hover
+                color: $color-main-dark
+    section .eye
+        position: absolute
+        top: 43%
+        right: 10px
+    #taken p:nth-child(2) .eye
+        position: inline-block
+        margin-left: 10px
+
+    .info-container, .status-container
+        h2
+            margin-bottom: 10px
+        button:not(.eye, .close)
+            margin-top: 10px
+            i
+                margin-left: 10px
+        #order-btn, #return-btn
+            margin-bottom: 4px
+    .info-container
+        form p:first-child
+            font-size: 0.9rem
+        #author
+            padding-right: 30px
+        #delete-btn
+            margin-left: 10px
+            background: darkred
+            &:hover
+                background: red
+    .status-container
+        margin-top: 20px
+        #free p:first-child
+            color: darkgreen
+            margin-bottom: 5px
+        #taken p:first-child, #outdate, #date-err
+            color: darkred
+
+#add
+    button:not(.close)
+        margin-top: 10px
+        i
+            margin-left: 10px
+
+#user-dialog, #author-dialog
+    h3
+        margin-bottom: 10px
+    p:first-child
+        margin-bottom: 10px
+        & + p
+            margin-bottom: 3px
+    span
+        font-weight: 700
+
+@media screen and ( max-width: 720px )
+    #info .container
+        flex-direction: column
+        align-items: center
+        img
+            margin-right: 0
+            margin-bottom: 20px
+
+@media screen and ( max-width: 430px )
+    img
+        scale: 0.8

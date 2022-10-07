@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #1f1821;
+  overflow: hidden;
+}
+
+h1, h2, h3 {
+  color: #600080;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ac00e6;
+  transition: 200ms ease;
+}
+a:hover {
+  color: #600080;
+}
+
+p, a, input, button, i {
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 4px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+button {
+  text-decoration: none;
+  padding: 8px 15px;
+  background: #600080;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 200ms ease-in;
+}
+button:hover {
+  background: #ac00e6;
+  scale: 1.05;
+}
+button:active {
+  scale: 1;
+}
+button:focus {
+  outline: none;
+}
+
+img {
+  background: url("loading.gif") 50% no-repeat;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+dialog {
+  position: relative;
+  max-height: 80vh;
+  margin: auto;
+  padding: 30px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-color: #600080;
+}
+dialog[open] {
+  opacity: 1;
+  pointer-events: inherit;
+}
+dialog::backdrop {
+  background-color: rgba(115, 0, 153, 0.2);
+  backdrop-filter: blur(2px);
+}
+dialog .close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: darkred;
+  background: transparent;
+  transition: color 200ms ease-in;
+}
+dialog .close:hover {
+  color: red;
+  scale: 1.02;
+}
+dialog .close i {
+  font-size: 2rem;
+}
+dialog input {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 430px) {
+  dialog {
+    padding: 10px;
+  }
+}
+.signup-container, .signin-container {
+  position: absolute;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: opacity 200ms ease, transform 500ms ease-out;
+  border: 4px solid #600080;
+  border-radius: 10px;
+  background: #fff;
+}
+.signup-container form p, .signin-container form p {
+  color: darkred;
+}
+.signup-container h1, .signin-container h1 {
+  margin-bottom: 20px;
+}
+.signup-container section, .signin-container section {
+  margin-bottom: 10px;
+  position: relative;
+}
+.signup-container button, .signin-container button {
+  display: block;
+  margin: 20px 0;
+  width: 100%;
+}
+.signup-container input, .signin-container input {
+  padding-left: 32px;
+}
+.signup-container i, .signin-container i {
+  position: absolute;
+  left: 8px;
+  top: 54%;
+}
+
+.signup-container:not([opened]) {
+  transform: translate(50vw, -50%);
+  opacity: 0;
+}
+.signup-container[opened] + .signin-container {
+  transform: translate(-50vw, -50%);
+  opacity: 0;
+}
+
+@media screen and (max-width: 430px) {
+  .signup-container, .signin-container {
+    width: 95%;
+    z-index: 10;
+  }
+
+  .signup-container:not([opened]) {
+    z-index: 1;
+  }
+  .signup-container[opened] + .signin-container {
+    z-index: 1;
+  }
+}
+nav {
+  color: white;
+  width: 80%;
+  margin: 30px auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .menu p {
+  font-size: 1.2rem;
+}
+nav .menu p, nav .menu button {
+  margin-left: 10px;
+}
+nav .menu button#logout i {
+  margin-left: 10px;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  background: white;
+  border: 4px solid #600080;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+table tbody {
+  display: block;
+  height: 80vh;
+  max-height: 80vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+table tbody tr {
+  transition: scale 80ms ease;
+}
+table tbody tr:nth-child(even) {
+  background: #eee;
+}
+table tbody tr:hover {
+  scale: 1.02;
+}
+table thead, table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  text-align: center;
+}
+table th {
+  font-size: 1.1rem;
+  border-bottom: 2px solid #600080;
+  cursor: pointer;
+}
+table th i {
+  margin-left: 10px;
+}
+table td, table th {
+  padding: 10px;
+}
+table .fa-check {
+  color: darkgreen;
+}
+table .fa-xmark {
+  color: darkred;
+}
+
+@media screen and (max-width: 720px) {
+  .text-icon {
+    font-size: 0;
+  }
+  .text-icon i {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  nav h1 {
+    margin-bottom: 10px;
+  }
+
+  tbody {
+    height: 60vh !important;
+  }
+}
+#info .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow-y: auto;
+  width: 100%;
+}
+#info .container img {
+  width: fit-content;
+  height: fit-content;
+  margin-right: 30px;
+}
+#info .container section, #info .container #taken p:nth-child(2) {
+  position: relative;
+}
+#info .container section .eye, #info .container #taken p:nth-child(2) .eye {
+  padding: 0;
+  color: #ac00e6;
+  background: transparent;
+}
+#info .container section .eye:hover, #info .container #taken p:nth-child(2) .eye:hover {
+  color: #600080;
+}
+#info .container section .eye {
+  position: absolute;
+  top: 43%;
+  right: 10px;
+}
+#info .container #taken p:nth-child(2) .eye {
+  position: inline-block;
+  margin-left: 10px;
+}
+#info .container .info-container h2, #info .container .status-container h2 {
+  margin-bottom: 10px;
+}
+#info .container .info-container button:not(.eye, .close), #info .container .status-container button:not(.eye, .close) {
+  margin-top: 10px;
+}
+#info .container .info-container button:not(.eye, .close) i, #info .container .status-container button:not(.eye, .close) i {
+  margin-left: 10px;
+}
+#info .container .info-container #order-btn, #info .container .info-container #return-btn, #info .container .status-container #order-btn, #info .container .status-container #return-btn {
+  margin-bottom: 4px;
+}
+#info .container .info-container form p:first-child {
+  font-size: 0.9rem;
+}
+#info .container .info-container #author {
+  padding-right: 30px;
+}
+#info .container .info-container #delete-btn {
+  margin-left: 10px;
+  background: darkred;
+}
+#info .container .info-container #delete-btn:hover {
+  background: red;
+}
+#info .container .status-container {
+  margin-top: 20px;
+}
+#info .container .status-container #free p:first-child {
+  color: darkgreen;
+  margin-bottom: 5px;
+}
+#info .container .status-container #taken p:first-child, #info .container .status-container #outdate, #info .container .status-container #date-err {
+  color: darkred;
+}
+
+#add button:not(.close) {
+  margin-top: 10px;
+}
+#add button:not(.close) i {
+  margin-left: 10px;
+}
+
+#user-dialog h3, #author-dialog h3 {
+  margin-bottom: 10px;
+}
+#user-dialog p:first-child, #author-dialog p:first-child {
+  margin-bottom: 10px;
+}
+#user-dialog p:first-child + p, #author-dialog p:first-child + p {
+  margin-bottom: 3px;
+}
+#user-dialog span, #author-dialog span {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 720px) {
+  #info .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #info .container img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 430px) {
+  img {
+    scale: 0.8;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

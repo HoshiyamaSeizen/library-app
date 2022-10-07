@@ -1,0 +1,73 @@
+nav
+    color: white
+    width: 80%
+    margin: 30px auto 10px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    .menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        p
+            font-size: 1.2rem
+        p, button
+            margin-left: 10px
+        button#logout i
+            margin-left: 10px
+
+table
+    width: 80%
+    margin: auto
+    background: white
+    border: 4px solid $color-main-dark
+    border-radius: 10px
+    border-collapse: collapse
+
+    tbody
+        display: block
+        height: 80vh
+        max-height: 80vh
+        overflow-x: hidden
+        overflow-y: auto
+        tr
+            transition: scale 80ms ease
+        tr:nth-child(even)
+            background: #eee
+        tr:hover
+            scale: 1.02
+    thead, tbody tr
+        display: table
+        width: 100%
+        table-layout: fixed
+        text-align: center
+    th
+        font-size: 1.1rem
+        border-bottom: 2px solid $color-main-dark
+        cursor: pointer
+        i
+            margin-left: 10px
+    td, th
+        padding: 10px
+
+    .fa-check
+        color: darkgreen
+    .fa-xmark
+        color: darkred
+
+@media screen and ( max-width: 720px )
+    .text-icon
+        font-size: 0
+        i
+            margin-left: 0 !important
+
+@media screen and ( max-width: 430px )
+    nav
+        flex-direction: column
+        margin-bottom: 10px
+        h1
+            margin-bottom: 10px
+    tbody
+        height: 60vh !important

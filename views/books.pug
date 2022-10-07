@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/style.css")
+        script(src="/public/scripts/books.js") 
+        script(src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous") 
+        title books
+    body 
+        nav 
+            h1 Books
+            .menu
+                p= user.name 
+                button(onClick="lookUser("+user.id+")") 
+                    i.fa-solid.fa-eye
+                button(onClick="openAddModule()") 
+                    i.fa-solid.fa-plus
+                button#logout.text-icon(onClick='logout()') Log out
+                    i.fa-solid.fa-right-from-bracket
+        table 
+            thead
+                tr 
+                    th(onClick="sortTable(this, 'title')", asc=false) Title 
+                        i.fa-solid.fa-sort
+                    th(onClick="sortTable(this, 'author')", asc=false) Author
+                        i.fa-solid.fa-sort
+                    th(onClick="sortTable(this, 'date')", asc=false) Year
+                        i.fa-solid.fa-sort
+                    th(onClick="sortTable(this, 'returnDay')", asc=false) In Stock
+                        i.fa-solid.fa-sort
+            tbody
+                each book in books
+                    tr(onClick="openInfo("+book.id+")")
+                        td= book.title 
+                        td= book.author
+                        td= book.date 
+                        td
+                            p(hidden)= book.takenBy === null 
+                            if book.takenBy === null 
+                                i.fa-solid.fa-check
+                            else
+                                i.fa-solid.fa-xmark
+        include includes/infoModal.pug
+        include includes/addModal.pug
+        include includes/authorModal.pug 
+        include includes/userModal.pug

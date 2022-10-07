@@ -1,0 +1,19 @@
+dialog#add
+    h2 Add Book
+    form(action="/books/add", method="POST") 
+        section
+            label(for='a_title') Title
+            input#a_title(name='title' type='text' required)
+        section
+            label(for='a_author') Author
+            input#a_author(name='author' type='text' required)
+        section
+            label(for='a_date') Year
+            input#a_date(name='date' type='text' required)
+        ection
+            label(for='a_isbn') isbn
+            input#a_isbn(name='isbn' type='text') 
+        button(type='submit') Add book
+            i.fa-solid.fa-plus
+        button.close(type="button", onClick="closeDialog(this)")
+            i.fa-solid.fa-xmark

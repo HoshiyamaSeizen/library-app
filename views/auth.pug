@@ -1,0 +1,51 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="/public/style.css")
+        script(src="https://kit.fontawesome.com/ac0925c6df.js" crossorigin="anonymous") 
+        script(src="/public/scripts/auth.js") 
+        title Auth
+    body
+        .signup-container(opened)
+            h1 Sign up
+            form(action="/auth/register" method="POST")
+                if error 
+                    p= error
+                section
+                    label(for='name') Username
+                    input#name(name='name' type='text' required)
+                    i.fa-solid.fa-user
+                section
+                    label(for='email') Email
+                    input#email(name='email' type='email' required)
+                    i.fa-solid.fa-envelope
+                section
+                    label(for='password') Password
+                    input#password(name='password' type='password' required)
+                    i.fa-solid.fa-key
+                section
+                    label(for='password1') Confirm password
+                    input#password1(name='password1' type='password' required)
+                    i.fa-solid.fa-key
+                button(type="submit") Sign up
+            p Already have an account? 
+                a(href="#" onClick="toggleAuth()") Sign In 
+        .signin-container
+            h1 Sign in
+            form(action="/auth/login" method="POST")
+                if error 
+                    p= error
+                section
+                    label(for='l_email') Email
+                    input#l_email(name='email' type='email' autocomplete='email' required)
+                    i.fa-solid.fa-envelope
+                section
+                    label(for='l_password') Password
+                    input#l_password(name='password' type='password' autocomplete='password' required)
+                    i.fa-solid.fa-key
+                button(type="submit") Sign in
+            p Don't have an account? 
+                a(href="#" onClick="toggleAuth()") Sign Up

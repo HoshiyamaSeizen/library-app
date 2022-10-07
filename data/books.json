@@ -1,0 +1,182 @@
+[
+  {
+    "id": 0,
+    "title": "No Game No Life Vol. 1",
+    "author": 0,
+    "date": "2013",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-0-316-38311-0"
+  },
+  {
+    "id": 1,
+    "title": "No Game No Life Vol. 2",
+    "author": 0,
+    "date": "2012",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-0-316-38517-6"
+  },
+  {
+    "id": 2,
+    "title": "No Game No Life Vol. 3",
+    "author": 0,
+    "date": "2013",
+    "takenBy": 1,
+    "takenDay": "2022-09-14",
+    "returnDay": "2022-09-20",
+    "isbn": "978-0-316-38519-0"
+  },
+  {
+    "id": 3,
+    "title": "No Game No Life Vol. 4",
+    "author": 0,
+    "date": "2013",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-0-316-38521-3"
+  },
+  {
+    "id": 4,
+    "title": "No Game No Life Vol. 5",
+    "author": 0,
+    "date": "2013",
+    "takenBy": 0,
+    "takenDay": "2022-09-29",
+    "returnDay": "2022-10-27",
+    "isbn": "978-0-316-38523-7"
+  },
+  {
+    "id": 5,
+    "title": "No Game No Life Vol. 6",
+    "author": 0,
+    "date": "2014",
+    "takenBy": 0,
+    "takenDay": "2022-09-28",
+    "returnDay": "2022-09-29",
+    "isbn": "978-0-316-38526-8"
+  },
+  {
+    "id": 6,
+    "title": "No Game No Life Vol. 7",
+    "author": 0,
+    "date": "2015",
+    "takenBy": 0,
+    "takenDay": "2022-09-28",
+    "returnDay": "2022-09-29",
+    "isbn": "978-0-316-31643-9"
+  },
+  {
+    "id": 7,
+    "title": "No Game No Life Vol. 8",
+    "author": 0,
+    "date": "2015",
+    "takenBy": 0,
+    "takenDay": "2022-09-28",
+    "returnDay": "2022-09-29",
+    "isbn": "978-0-316-50266-5"
+  },
+  {
+    "id": 8,
+    "title": "No Game No Life Vol. 9",
+    "author": 0,
+    "date": "2016",
+    "takenBy": 0,
+    "takenDay": "2022-09-28",
+    "returnDay": "2022-09-29",
+    "isbn": "978-0-316-47134-3"
+  },
+  {
+    "id": 9,
+    "title": "No Game No Life Vol. 10",
+    "author": 0,
+    "date": "2018",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-1-9753-8678-8"
+  },
+  {
+    "id": 10,
+    "title": "Steins;Gate Vol. 1",
+    "author": 3,
+    "date": "2010",
+    "takenBy": 0,
+    "takenDay": "2022-09-29",
+    "returnDay": "2022-09-30",
+    "isbn": "978-1-92-792550-8"
+  },
+  {
+    "id": 11,
+    "title": "Steins;Gate Vol. 2",
+    "author": 3,
+    "date": "2013",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-1-92-792555-3"
+  },
+  {
+    "id": 12,
+    "title": "Steins;Gate Vol. 3",
+    "author": 3,
+    "date": "2013",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-1-92-792571-3"
+  },
+  {
+    "id": 13,
+    "title": "Spice and Wolf Vol. 1",
+    "author": 4,
+    "date": "2006",
+    "takenBy": 0,
+    "takenDay": "2022-10-07",
+    "returnDay": "2022-10-26",
+    "isbn": "978-0-7595-3104-8"
+  },
+  {
+    "id": 14,
+    "title": "Spice and Wolf Vol. 2",
+    "author": 4,
+    "date": "2006",
+    "takenBy": 2,
+    "takenDay": "2022-10-07",
+    "returnDay": "2022-10-08",
+    "isbn": "978-0-7595-3106-2"
+  },
+  {
+    "id": 15,
+    "title": "Spice and Wolf Vol. 3",
+    "author": 4,
+    "date": "2006",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-0-7595-3107-9"
+  },
+  {
+    "id": 16,
+    "title": "Spice and Wolf Vol. 4",
+    "author": 4,
+    "date": "2007",
+    "takenBy": 3,
+    "takenDay": "2022-10-07",
+    "returnDay": "2022-10-29",
+    "isbn": "978-0-7595-3108-6"
+  },
+  {
+    "id": 17,
+    "title": "Spice and Wolf Vol. 5",
+    "author": 4,
+    "date": "2007",
+    "takenBy": null,
+    "takenDay": null,
+    "returnDay": null,
+    "isbn": "978-0-7595-3110-9"
+  }
+]
